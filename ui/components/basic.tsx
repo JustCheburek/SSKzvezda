@@ -7,15 +7,3 @@ export const Main = ({ children, className, ...props }: PropsWithChildren<Compon
   </main>
 );
 
-export const Section = (
-  {
-    children,
-    className,
-    cols = false,
-    ...props
-  }: PropsWithChildren<ComponentPropsWithoutRef<"section"> & { cols?: boolean }>) => (
-  <section className={cn("grid gap-8", { "font-medium": cols }, className)} {...props}>
-    {children}
-  </section>
-);
-
