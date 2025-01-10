@@ -31,7 +31,7 @@ export default function RootLayout(
 			children,
 		}: PropsWithChildren) {
 	return (
-			<html lang="en">
+			<html lang="ru">
 			<body className={`${OpenSans.className} text-balance bg-neutral-100 dark:bg-neutral-950 accent-ssk caret-ssk selection:bg-ssk/10 selection:text-ssk`}>
 			<Main>
 				{children}
