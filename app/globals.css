@@ -4,12 +4,7 @@
 
 :root {
 	--background: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: ;
-	}
+	--unic-color: #0089E3;
 }
 
 img {
@@ -32,4 +27,23 @@ main {
 
 footer {
 	flex: 0 0 auto;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--unic-color) #000000;
+}
+
+*::-webkit-scrollbar {
+	height: 8px;
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--unic-color);
+	border-radius: 35px;
 }

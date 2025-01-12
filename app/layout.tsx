@@ -2,7 +2,6 @@ import type {Metadata} from "next";
 import "./globals.css";
 import {PropsWithChildren} from "react";
 import {Open_Sans} from "next/font/google";
-import {Main} from "@components/basic";
 
 const OpenSans = Open_Sans({subsets: ["latin"], preload: true, style: "normal"});
 
@@ -31,11 +30,11 @@ export default function RootLayout(
 			children,
 		}: PropsWithChildren) {
 	return (
-			<html lang="ru">
+			<html lang="ru" className="overflow-clip">
 			<body className={`${OpenSans.className} text-balance bg-neutral-100 dark:bg-neutral-950 accent-ssk caret-ssk selection:bg-ssk/10 selection:text-ssk`}>
-			<Main>
+			<main className="overflow-auto h-[100vh] snap-mandatory snap-y">
 				{children}
-			</Main>
+			</main>
 			</body>
 			</html>
 	);

@@ -8,8 +8,12 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				ssk: "#0089E3"
+				ssk: "var(--unic-color)",
+				background: "rgb(245 245 245/1)"
 			},
+			screens: {
+				"xs": "475px"
+			}
 		},
 	},
 	plugins: [],

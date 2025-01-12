@@ -1,15 +1,19 @@
 import {H1, H3} from "@components/text";
-import {PropsWithChildren} from "react";
+import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
+import {cn} from "@server/cn";
 
-const Box = ({children}: PropsWithChildren) => (
-		<div className="flex flex-col gap-5 justify-center items-center min-h-[90svh]">
+const Box = ({children, className, ...props}: PropsWithChildren<ComponentPropsWithoutRef<"div">>) => (
+		<div className={cn(
+				"flex flex-col gap-5 justify-center items-center min-h-[100svh] text-center snap-center",
+				className
+		)} {...props}>
 			{children}
 		</div>
 )
 
 export default function Stages() {
 	return (
-			<div>
+			<>
 				<Box>
 					<H1>
 						Проект
@@ -20,8 +24,13 @@ export default function Stages() {
 						БКП
 					</H1>
 					<H3>
-						Блок-корпусное производство
+						Блок корпусных производств
 					</H3>
+				</Box>
+				<Box>
+					<H1>
+						Окраска
+					</H1>
 				</Box>
 				<Box>
 					<H1>
@@ -52,6 +61,6 @@ export default function Stages() {
 						Церемония спуска на воду
 					</H3>
 				</Box>
-			</div>
+			</>
 	);
 }
