@@ -15,19 +15,19 @@ const Box = ({children, className, ...props}: ComponentPropsWithoutRef<"div">) =
 )
 
 const Heading = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => (
-		<div className="w-fit m-auto">
-			<LinkOrNull href={href}>
+		<LinkOrNull href={href}>
+			<div className="grid gap-2">
 				{children}
-			</LinkOrNull>
-		</div>
+			</div>
+		</LinkOrNull>
 )
 
 const LinkOrNull = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => {
-		if (!href) {
-			return children
-		}
+	if (!href) {
+		return children
+	}
 
-		return <Link href={href}>{children}</Link>
+	return <Link href={href} className="w-fit m-auto">{children}</Link>
 }
 
 const Text = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => (
@@ -67,45 +67,67 @@ export default function Stages() {
 					</Text>
 				</Box>
 				<Box>
-					<Heading>
+					<Heading href="/color">
 						<H1>
 							Окраска
 						</H1>
 					</Heading>
-					<Text>
-						<P>
-
-						</P>
+					<Text href="/color">
+						<H3>
+							1 камера очистки и 3 камеры краски
+						</H3>
 					</Text>
 				</Box>
 				<Box>
-					<H1>
-						ЦСБ
-					</H1>
-					<H3>
-						Цех сборки блоков
-					</H3>
+					<Heading href="/tssb">
+						<H1>
+							ЦСБ
+						</H1>
+						<P>
+							Цех сборки блоков
+						</P>
+					</Heading>
+					<Text href="/tssb">
+						<H3>
+							Сборка и сварка секций
+						</H3>
+					</Text>
 				</Box>
 				<Box>
-					<H1>
-						Стапель
-					</H1>
+					<Heading href="/stapel">
+						<H1>
+							Стапель
+						</H1>
+					</Heading>
+					<Text href="/stapel">
+						<H3>
+							Крупнейшее спусковое сооружение
+						</H3>
+					</Text>
 				</Box>
 				<Box>
-					<H1>
-						Сухой док
-					</H1>
-					<H3>
-						Самый большой в Евразии
-					</H3>
+					<Heading href="/dok">
+						<H1>
+							Сухой док
+						</H1>
+					</Heading>
+					<Text href="/dok">
+						<H3>
+							Крупнейшее гидротехническое сооружение
+						</H3>
+					</Text>
 				</Box>
 				<Box>
-					<H1>
-						В добрый путь
-					</H1>
-					<H3>
-						Церемония спуска на воду
-					</H3>
+					<Heading>
+						<H1>
+							В добрый путь
+						</H1>
+					</Heading>
+					<Text>
+						<H3>
+							Церемония спуска на воду
+						</H3>
+					</Text>
 				</Box>
 			</>
 	);

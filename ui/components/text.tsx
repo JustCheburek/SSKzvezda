@@ -32,19 +32,12 @@ export const H3 = (
   { children, className }: TextProps
 ) => (
   <h3 className={cn(
-    "text-xl text-neutral-300/85 font-medium",
+    "text-xl text-neutral-300 font-medium",
     className
   )}>
     {children}
   </h3>
 );
-
-export const ListHeading = ({children}: PropsWithChildren) => (
-  <H3 className="flex items-center gap-2">
-    <span className="icon-[fluent--list-24-regular] size-[1.3em]"/>
-    {children}
-  </H3>
-)
 
 export const P = (
   { children, className, ...props }: PropsWithChildren<ComponentPropsWithoutRef<"p">>
