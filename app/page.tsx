@@ -48,7 +48,17 @@ export default function Stages() {
 			<>
 				<Box>
 					<H1>
-						Заказчик
+						Заказ
+					</H1>
+				</Box>
+				<Box>
+					<H1>
+						Проект
+					</H1>
+				</Box>
+				<Box>
+					<H1>
+						Проверка проекта
 					</H1>
 				</Box>
 				<Box>
