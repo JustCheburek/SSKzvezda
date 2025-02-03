@@ -9,8 +9,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				ssk: "var(--unic-color)",
-				background: "rgb(245 245 245/1)"
+				ssk: "var(--unic)",
+				background: "var(--background)"
 			},
 			screens: {
 				"xs": "475px"

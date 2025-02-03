@@ -11,7 +11,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "critters": "^0.0.25",
-    "next": "15.1.4",
+    "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0"
@@ -19,12 +19,12 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.2",
     "@iconify/tailwind": "^1.2.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "^20.17.16",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
   },
   "type": "module"
 }

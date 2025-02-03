@@ -6,8 +6,11 @@ import {Open_Sans} from "next/font/google";
 const OpenSans = Open_Sans({subsets: ["latin"], preload: true, style: "normal"});
 
 export const metadata: Metadata = {
-	title: "Виртуальная экскурсия по ССК Звезде",
-	description: "Этапы создания судно",
+	title: {
+		template: "%s • Виртуальная экскурсия • ССК Звезда",
+		default: "Виртуальная экскурсия • ССК Звезда"
+	},
+	description: "Этапы создания судна и карта цехов завода",
 	metadataBase: new URL(process.env.NEXT_PUBLIC_URL!),
 	alternates: {
 		canonical: './',
@@ -31,8 +34,8 @@ export default function RootLayout(
 		}: PropsWithChildren) {
 	return (
 			<html lang="ru" className="overflow-clip">
-			<body className={`${OpenSans.className} text-balance bg-neutral-100 dark:bg-neutral-950 accent-ssk caret-ssk selection:bg-ssk/10 selection:text-ssk`}>
-			<main className="overflow-auto h-[100vh] snap-mandatory snap-y">
+			<body className={`${OpenSans.className} text-balance bg-background accent-ssk caret-ssk selection:bg-ssk/10 selection:text-ssk`}>
+			<main className="overflow-x-scroll overflow-y-clip flex w-auto snap-mandatory snap-x scroll-smooth">
 				{children}
 			</main>
 			</body>

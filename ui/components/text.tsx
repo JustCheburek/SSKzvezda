@@ -21,7 +21,7 @@ export const H2 = (
   { children, className }: TextProps
 ) => (
   <h2 className={cn(
-    "text-2xl font-medium",
+    "text-4xl dark:text-neutral-100 font-medium",
     className
   )}>
     {children}
@@ -32,7 +32,7 @@ export const H3 = (
   { children, className }: TextProps
 ) => (
   <h3 className={cn(
-    "text-xl text-neutral-300 font-medium",
+    "text-xl dark:text-neutral-200/90 font-medium",
     className
   )}>
     {children}
@@ -43,7 +43,7 @@ export const P = (
   { children, className, ...props }: PropsWithChildren<ComponentPropsWithoutRef<"p">>
 ) => (
   <p className={cn(
-    "dark:text-neutral-300/95",
+    "dark:text-neutral-300",
     className
   )} {...props}>
     {children}

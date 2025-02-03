@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 :root {
-	--background: #ffffff;
-	--unic-color: #0089E3;
+	--background: rgb(229 229 229);
+	--unic: #0089E3;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: rgb(10 10 10);
+	}
 }
 
 img {
@@ -31,7 +37,7 @@ footer {
 
 * {
 	scrollbar-width: thin;
-	scrollbar-color: var(--unic-color) #000000;
+	scrollbar-color: var(--unic) #000000;
 }
 
 *::-webkit-scrollbar {
@@ -44,6 +50,6 @@ footer {
 }
 
 *::-webkit-scrollbar-thumb {
-	background: var(--unic-color);
+	background: var(--unic);
 	border-radius: 35px;
 }
