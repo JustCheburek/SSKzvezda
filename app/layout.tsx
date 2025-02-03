@@ -32,7 +32,7 @@ export default function RootLayout(
 	return (
 			<html lang="ru" className="overflow-clip">
 			<body className={`${OpenSans.className} text-balance bg-neutral-100 dark:bg-neutral-950 accent-ssk caret-ssk selection:bg-ssk/10 selection:text-ssk`}>
-			<main className="overflow-auto h-[100vh] snap-mandatory snap">
+			<main className="overflow-auto h-[100vh] snap-mandatory snap-y">
 				{children}
 			</main>
 			</body>
