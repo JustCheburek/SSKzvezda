@@ -13,7 +13,7 @@ const LinkOrNull = ({children, href}: PropsWithChildren<{ href?: LinkProps["href
 		return children
 	}
 
-	return <Link href={href} className="w-fit m-auto">{children}</Link>
+	return <Link href={href}>{children}</Link>
 }
 
 type StringDirections = {
@@ -33,7 +33,7 @@ const ArrowLink = (
 		<Link
 				{...props}
 				className={cn(
-						"size-[3.5rem] m-12 mt-auto text-black/90 dark:text-neutral-500/90 hover:text-ssk transition-colors duration-300",
+						"size-12 text-black/90 dark:text-neutral-500/80 hover:text-ssk transition-colors duration-300",
 						{"mr-auto": left},
 						{"ml-auto": right},
 						className
@@ -45,28 +45,31 @@ const Box = (
 			children, className = "", left, right, ...props
 		}: ComponentPropsWithoutRef<"div"> & StringDirections) => (
 		<section className={cn(
-				"relative grid grid-cols-5 justify-center items-center text-center min-w-[100dvw] snap-center",
+				"relative flex flex-col justify-center items-center text-center min-w-[100dvw] max-w-[100dvw] snap-center",
 				className
 		)} {...props}>
-			{left
-					? <ArrowLink href={`#${left}`} left>
-						<span
-								className="icon-[heroicons--arrow-left-circle-16-solid] size-full"
-						/>
-					</ArrowLink>
-					: <div/>
-			}
-			<div className="grid gap-4 col-span-3">
+			<div className="flex flex-col justify-center items-center gap-4 flex-1">
 				{children}
 			</div>
-			{right
-					? <ArrowLink href={`#${right}`} right>
-						<span
-								className="icon-[heroicons--arrow-right-circle-16-solid] size-full"
-						/>
-					</ArrowLink>
-					: <div/>
-			}
+
+			<div className="w-full flex flex-0 mb-12 px-[5vw]">
+				{left
+						? <ArrowLink href={`#${left}`} left>
+								<span
+										className="icon-[heroicons--arrow-left-circle-16-solid] size-full"
+								/>
+							</ArrowLink>
+						: <div/>
+				}
+				{right
+						? <ArrowLink href={`#${right}`} right>
+								<span
+										className="icon-[heroicons--arrow-right-circle-16-solid] size-full"
+								/>
+							</ArrowLink>
+						: <div/>
+				}
+			</div>
 		</section>
 )
 

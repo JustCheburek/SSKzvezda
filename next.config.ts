@@ -16,8 +16,7 @@ const nextConfig: NextConfig = {
 	},
 	serverExternalPackages: ["typescript"],
 	experimental: {
-		typedEnv: true,
-		optimizeCss: true
+		typedEnv: true
 	}
 };
 
