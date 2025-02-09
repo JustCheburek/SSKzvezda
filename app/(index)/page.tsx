@@ -81,20 +81,9 @@ const Heading = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] 
 		</LinkOrNull>
 )
 
-const Text = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => (
-		<H3 className="flex gap-2 justify-center items-center">
+const Text = ({children}: PropsWithChildren) => (
+		<H3 className="flex relative gap-2 justify-center items-center">
 			{children}
-
-			{href &&
-					<Link
-							href={href}
-							className="size-[2em] flex items-center justify-center text-neutral-300/90 hover:text-ssk transition-colors duration-300"
-					>
-						<span
-								className="icon-[heroicons--arrow-long-right] size-full"
-						/>
-					</Link>
-			}
 		</H3>
 )
 
@@ -105,7 +94,7 @@ const Year = ({children}: PropsWithChildren) => (
 )
 
 const Meaning = ({children}: PropsWithChildren) => (
-		<P className="absolute right-12 top-10">
+		<P className="absolute right-12 top-10 hidden xs:block">
 			{children}
 		</P>
 )
@@ -135,7 +124,7 @@ export default function Stages() {
 					<Meaning>
 						Блок корпусных производств
 					</Meaning>
-					<Text href="/bkp">
+					<Text>
 						6 пролётов:<br/>
 						5 горизонтальных + 1 вертикальный
 					</Text>
@@ -147,7 +136,7 @@ export default function Stages() {
 					<Heading href="/color">
 						Окраска
 					</Heading>
-					<Text href="/color">
+					<Text>
 						Камера очистки<br/>
 						и 3 камеры краски
 					</Text>
@@ -162,7 +151,7 @@ export default function Stages() {
 					<Meaning>
 						Цех сборки блоков
 					</Meaning>
-					<Text href="/tssb">
+					<Text>
 						Сборка и сварка секций
 					</Text>
 					<Year>
@@ -173,7 +162,7 @@ export default function Stages() {
 					<Heading href="/stapel">
 						Стапель
 					</Heading>
-					<Text href="/stapel">
+					<Text>
 						Крупнейшее спусковое сооружение
 					</Text>
 					<Year>
@@ -184,7 +173,7 @@ export default function Stages() {
 					<Heading href="/dok">
 						Сухой док
 					</Heading>
-					<Text href="/dok">
+					<Text>
 						Крупнейшее гидротехническое сооружение
 					</Text>
 					<Year>

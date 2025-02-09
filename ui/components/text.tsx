@@ -9,7 +9,7 @@ export const H1 = (
   { children, className, color = true }: TextProps & { color?: boolean }
 ) => (
   <h1 className={cn(
-    "text-5xl xs:text-8xl md:text-9xl font-semibold",
+    "text-5xl xs:text-7xl md:text-8xl xl:text-9xl font-semibold",
     {"text-ssk": color},
     className
   )}>
@@ -21,7 +21,7 @@ export const H2 = (
   { children, className }: TextProps
 ) => (
   <h2 className={cn(
-    "text-4xl dark:text-neutral-100 font-medium",
+    "text-3xl xs:text-4xl dark:text-neutral-100 font-medium",
     className
   )}>
     {children}
