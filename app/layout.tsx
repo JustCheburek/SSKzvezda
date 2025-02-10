@@ -34,7 +34,7 @@ export default function RootLayout(
 			children,
 		}: PropsWithChildren) {
 	return (
-			<html lang="ru" className="overflow-clip">
+			<html lang="ru">
 			<body className={`${OpenSans.className} text-balance bg-background accent-ssk caret-ssk selection:bg-blue-300/10 selection:text-blue-200/80 break-words`}>
 			<Header/>
 			{children}

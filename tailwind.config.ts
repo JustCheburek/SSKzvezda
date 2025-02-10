@@ -10,7 +10,9 @@ export default {
 		extend: {
 			colors: {
 				ssk: "var(--unic)",
-				background: "var(--background)"
+				background: "var(--background)",
+				"light-gray": "#808080",
+				gray: "#232323"
 			},
 			screens: {
 				"xs": "475px"
