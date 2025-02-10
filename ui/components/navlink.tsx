@@ -1,21 +1,19 @@
 "use client";
 
 import {usePathname} from "next/navigation";
-import Link from "next/link";
-import {PropsWithChildren} from "react";
+import Link, {LinkProps} from "next/link";
+import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
 import {cn} from "@server/cn";
 
-type NavLink = {
-	href: string
+export type NavLinkProps = {
 	activeClassName?: string
-	className?: string
 	exact?: boolean
-}
+} & LinkProps & ComponentPropsWithoutRef<"a">
 
 export function NavLink(
 		{
 			href, children, activeClassName = "", className = "", exact = false, ...props
-		}: PropsWithChildren<NavLink>
+		}: PropsWithChildren<NavLinkProps>
 ) {
 	const pathname = usePathname()
 	if (href === "/") {

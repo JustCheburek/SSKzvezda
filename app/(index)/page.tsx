@@ -101,7 +101,7 @@ const Meaning = ({children}: PropsWithChildren) => (
 
 export default function Stages() {
 	return (
-			<>
+			<main className="overflow-x-scroll overflow-y-clip flex w-auto snap-mandatory snap-x scroll-smooth">
 				<Box id="order" right="project">
 					<H1>
 						Заказ
@@ -188,6 +188,6 @@ export default function Stages() {
 						Церемония спуска на воду
 					</Text>
 				</Box>
-			</>
+			</main>
 	);
 }
