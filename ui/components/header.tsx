@@ -1,7 +1,7 @@
-import {H3} from "@components/text";
 import {NavLink} from "@components/navlink";
 import {PropsWithChildren} from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function HeaderLink({href, children}: PropsWithChildren<{ href: string }>) {
 	return (
@@ -13,11 +13,9 @@ function HeaderLink({href, children}: PropsWithChildren<{ href: string }>) {
 
 export function Header() {
 	return (
-			<header className="flex gap-8 justify-between text-center py-6 px-16">
-				<Link href="/" className="flex justify-center items-center">
-					<H3>
-						Лого
-					</H3>
+			<header className="flex gap-8 justify-between items-center text-center py-6 px-16">
+				<Link href="/" className="flex justify-center items-center relative min-h-12 aspect-video">
+					<Image src="/logos/logo.svg" alt="Логотип" fill/>
 				</Link>
 
 				<div className="size-10 sm:hidden">
