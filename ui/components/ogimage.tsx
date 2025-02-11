@@ -1,6 +1,4 @@
-import {PropsWithChildren} from "react";
-
-export function OGImageBox({children}: PropsWithChildren) {
+export function OGImageBox() {
 	return (
       <div
           style={{
@@ -21,7 +19,7 @@ export function OGImageBox({children}: PropsWithChildren) {
           ССК Звезда
         </h1>
         <h1 style={{fontSize: 47, color: "#FFFFFF", fontWeight: 500, textAlign: "center", maxWidth: "80%"}}>
-          {children}
+          Этапы создания судно
         </h1>
       </div>
   )

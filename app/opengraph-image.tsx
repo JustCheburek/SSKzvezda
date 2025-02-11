@@ -15,9 +15,7 @@ export default async function Image() {
 
     return new ImageResponse(
         (
-            <OGImageBox>
-              Этапы создания судно
-            </OGImageBox>
+            <OGImageBox/>
         ),
         {
             ...size,

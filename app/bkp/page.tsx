@@ -2,6 +2,12 @@ import {BlockQuote, H3, P, Ul} from "@components/text";
 import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
 import {cn} from "@server/cn";
 import Image from "next/image";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "БКП",
+	description: "Блок корпусных производств: создание секций и блоков судна"
+}
 
 type Box = {
 	img?: boolean
