@@ -1,11 +1,31 @@
-import {P} from "@components/text";
+import {H2, P} from "@components/text";
+import {Box, Container, Main, Name} from "@components/basic";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "Сухой док",
+	description: "Одно из крупнейших в мире гидротехнических сооружений"
+}
 
 export default function Dok() {
 	return (
-			<div className="container mx-auto">
-				<P>
-					Сухой док — важнейшее гидротехническое сооружение судоверфи «Звезда».
-				</P>
-			</div>
+			<Main>
+				<Name>
+					<H2 color>
+						Сухой док
+					</H2>
+					<P>
+						одно из крупнейших в мире гидротехнических сооружений
+					</P>
+				</Name>
+
+				<Container>
+					<Box>
+						<P>
+							важнейшее гидротехническое сооружение судоверфи «Звезда».
+						</P>
+					</Box>
+				</Container>
+			</Main>
 	)
 }

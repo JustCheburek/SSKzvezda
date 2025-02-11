@@ -1,47 +1,25 @@
-import {BlockQuote, H3, P, Ul} from "@components/text";
-import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
-import {cn} from "@server/cn";
-import Image from "next/image";
 import type {Metadata} from "next";
+import {BlockQuote, H2, H3, P, Ul} from "@components/text";
+import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
 
 export const metadata: Metadata = {
 	title: "БКП",
 	description: "Блок корпусных производств: создание секций и блоков судна"
 }
 
-type Box = {
-	img?: boolean
-} & ComponentPropsWithoutRef<"div">
-
-function Box({children, className = "", img = false, ...props}: PropsWithChildren<Box>) {
-	return (
-			<div
-					className={cn(
-							"relative flex flex-col justify-center items-center gap-4 border border-light-gray rounded-lg p-4 bg-gray",
-							{"overflow-clip min-h-64": img},
-							className
-					)}
-					{...props}
-			>
-				{children}
-			</div>
-	)
-}
-
-type Heading = ComponentPropsWithoutRef<"h3">
-
-function Heading({children, className = "", ...props}: PropsWithChildren<Heading>) {
-	return (
-			<H3 className={cn("text-center", className)} {...props}>
-				{children}
-			</H3>
-	)
-}
-
 export default function BKP() {
 	return (
-			<main className="container mx-auto">
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 pt-6 pb-12">
+			<Main>
+				<Name>
+					<H2 color>
+						БКП
+					</H2>
+					<P>
+						блок корпусных производств
+					</P>
+				</Name>
+
+				<Container>
 					<div className="relative grid grid-cols-7 gap-2 *:border-light-gray min-h-40">
 						<P className="absolute left-1.5 top-[50%] translate-y-[-50%] [writing-mode:vertical-lr] rotate-180">
 							Вертикальный
@@ -69,12 +47,12 @@ export default function BKP() {
 						<Ul>
 							<li>
 								<P>
-									до 300 тонн
+									до 23×13×12 метров
 								</P>
 							</li>
 							<li>
 								<P>
-									до 23×13×12 метров
+									до 300 тонн
 								</P>
 							</li>
 						</Ul>
@@ -122,7 +100,7 @@ export default function BKP() {
 					</Box>
 
 					<Box img>
-						<Image src="/bkp/building.jpg" alt="Сварка" fill className="hover:scale-110 duration-500"/>
+						<Img src="/bkp/building.jpg" alt="Цех"/>
 					</Box>
 
 					<Box>
@@ -143,7 +121,7 @@ export default function BKP() {
 						</Ul>
 					</Box>
 
-					<Box>
+					<Box className="text-center">
 						<Heading>
 							Высокоточная роботизированная система
 						</Heading>
@@ -153,11 +131,11 @@ export default function BKP() {
 					</Box>
 
 					<Box img className="lg:col-span-2">
-						<Image src="/bkp/welding.png" alt="Сварка" fill className="hover:scale-110 duration-500"/>
+						<Img src="/bkp/welding.png" alt="Сварка"/>
 					</Box>
 
 					<Box img className="lg:col-span-2">
-						<Image src="/people/group.jpg" alt="Сварка" fill className="hover:scale-110 duration-500"/>
+						<Img src="/people/group.jpg" alt="Группа работников"/>
 					</Box>
 
 					<Box>
@@ -178,7 +156,7 @@ export default function BKP() {
 							</li>
 						</Ul>
 					</Box>
-				</div>
-			</main>
+				</Container>
+			</Main>
 	)
 }

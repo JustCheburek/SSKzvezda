@@ -1,17 +1,55 @@
-import {P} from "@components/text";
+import {BlockQuote, H2, P, Ul} from "@components/text";
+import {Box, Container, Heading, Main, Name} from "@components/basic";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "Стапель",
+	description: "Крупнейшее спусковое сооружение в России"
+}
 
 export default function Stapel() {
 	return (
-			<div className="container mx-auto">
-				<P>
-					Открытый достроечный тяжелый стапель — крупнейшее спусковое сооружение в РФ
-				</P>
-				<br/>
-				<P>
-					Крановое хозяйство стапеля, в том числе уникальный кран типа «Голиаф» грузоподъемностью 1200 тонн, активно
-					используется в производственной деятельности. На стапеле и в сухом доке козловые краны с максимальной
-					грузоподъемностью 1200 тонн позволяют производить грузоподъемные операции с блоками массой до 1100 тонн.
-				</P>
-			</div>
+			<Main>
+				<Name>
+					<H2 color>
+						Стапель
+					</H2>
+					<P>
+						крупнейшее спусковое сооружение в России
+					</P>
+				</Name>
+
+				<Container>
+					<Box>
+						<Heading>
+							Голиаф
+						</Heading>
+						<div>
+							<Ul>
+								<li>
+									<P>
+										до 1200 тонн
+									</P>
+								</li>
+							</Ul>
+							<BlockQuote>
+								«Активно используется в производственной деятельности»
+							</BlockQuote>
+						</div>
+					</Box>
+					<Box>
+						<Heading>
+							Козловые краны
+						</Heading>
+						<Ul>
+							<li>
+								<P>
+									до 1100 тонн
+								</P>
+							</li>
+						</Ul>
+					</Box>
+				</Container>
+			</Main>
 	)
 }

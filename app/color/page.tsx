@@ -1,38 +1,83 @@
-import {H3, P} from "@components/text";
+import {H2, P, Ul} from "@components/text";
+import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: "Окраска",
+	description: "Очистка и окраска судно"
+}
 
 export default function Color() {
 	return (
-			<div className="container mx-auto">
-				<H3>
-					Камера очистки и 3 камеры окраски и сушки
-				</H3>
-				<br/>
-				<P>
-					Предназначены для дробеструйной очистки, окраски и сушки поверхностей судовых корпусных конструкций судов
-					(объемных секций)
-				</P>
-				<br/>
-				<P>
-					Камеры 23 х 27 х 10 м + до 400 т.
-				</P>
-				<br/>
-				<P>
-					Основное сырьё:
-				</P>
-				<ul className="ml-8 list-disc">
-					<li>
+			<Main>
+				<Name>
+					<H2 color>
+						Окраска
+					</H2>
+				</Name>
+
+				<Container>
+					<Box className="text-center">
+						<Heading>
+							Камера очистки
+						</Heading>
 						<P>
-							В качестве абразивного материала для очистки поверхности используется стальная колотая дробь
+							Дробеструйная очистка поверхностей секций судов
 						</P>
-					</li>
-					<li>
+					</Box>
+
+					<Box className="text-center">
+						<Heading>
+							3 камеры окраски и сушки
+						</Heading>
 						<P>
-							Для грунтовки и окраски используется большая номенклатура красок ведущих мировых производителей — Jotun
-							Paints (Норвегия), Hempel A/S (Дания), International Coatings LTD (Великобритания), а также отечественных
-							производителей
+							Окраски и сушка поверхностей секций судов
 						</P>
-					</li>
-				</ul>
-			</div>
+					</Box>
+
+					<Box>
+						<Heading>
+							Камеры
+						</Heading>
+						<Ul>
+							<li>
+								<P>
+									23х27х10 метров
+								</P>
+							</li>
+							<li>
+								до 400 т.
+							</li>
+						</Ul>
+					</Box>
+
+					<Box img>
+						<Img src="/color/master.jpg" alt="Секция"/>
+					</Box>
+
+					<Box>
+						<Heading>
+							Основное сырьё
+						</Heading>
+						<Ul>
+							<li>
+								<P>
+									Стальная колотая дробь — абразивный материал для очистки поверхности
+								</P>
+							</li>
+							<li>
+								<P>
+									Для грунтовки и окраски используется большой список красок ведущих мировых и отечественных
+									производителей
+								</P>
+							</li>
+						</Ul>
+					</Box>
+
+					<Box img>
+						<Img src="/color/block.webp" alt="Секция"/>
+					</Box>
+				</Container>
+			</Main>
 	)
 }
