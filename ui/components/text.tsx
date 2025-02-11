@@ -32,7 +32,7 @@ export const H3 = (
   { children, className }: TextProps
 ) => (
   <h3 className={cn(
-    "text-xl dark:text-neutral-200/90 font-medium",
+    "text-xl dark:text-neutral-200/90 font-semibold",
     className
   )}>
     {children}
@@ -43,7 +43,7 @@ export const P = (
   { children, className, ...props }: PropsWithChildren<ComponentPropsWithoutRef<"p">>
 ) => (
   <p className={cn(
-    "dark:text-neutral-300",
+    "",
     className
   )} {...props}>
     {children}
@@ -60,3 +60,25 @@ export const Small = (
     {children}
   </small>
 );
+
+export const BlockQuote = (
+  { children, className }: TextProps
+) => (
+  <blockquote className={cn(
+    "",
+    className
+  )}>
+    {children}
+  </blockquote>
+)
+
+export const Ul = (
+  { children, className }: TextProps
+) => (
+  <ul className={cn(
+      "ml-8 list-disc marker:text-neutral-300/70",
+    className
+  )}>
+    {children}
+  </ul>
+)

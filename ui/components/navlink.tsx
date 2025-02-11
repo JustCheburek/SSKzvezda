@@ -27,7 +27,6 @@ export function NavLink(
 					className={cn(
 							"text-xl",
 							className,
-							{"dark:text-neutral-300": !isActive},
 							{[activeClassName]: isActive}
 					)}
 					{...props}
