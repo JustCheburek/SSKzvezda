@@ -21,22 +21,22 @@ export default function BKP() {
 
 				<Container>
 					<div className="relative grid grid-cols-7 gap-2 *:border-light-gray min-h-40">
-						<P className="absolute left-1.5 top-[50%] translate-y-[-50%] [writing-mode:vertical-lr] rotate-180">
+						<P className="absolute left-4 top-[50%] translate-y-[-50%] [writing-mode:vertical-lr] rotate-180">
 							Вертикальный
 						</P>
-						<div className="rounded-tl-lg rounded-bl-lg border-l border-t border-b bg-gray"/>
+						<div className="rounded-tl-lg rounded-bl-lg border-l border-t border-b bg-neutral-100 dark:bg-gray"/>
 						<div className="relative grid col-span-6 gap-2 *:border-light-gray">
-							<H3 className="absolute top-5 left-[50%] translate-x-[-50%]">
+							<H3 className="absolute top-8 left-[50%] translate-x-[-50%]">
 								Пролёты
 							</H3>
 							<P className="w-max absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
 								5 горизонтальных
 							</P>
-							<div className="rounded-tr-lg border-t bg-gray border-r"/>
-							<div className="bg-gray border-r"/>
-							<div className="bg-gray border-r"/>
-							<div className="bg-gray border-r"/>
-							<div className="rounded-br-lg border-b bg-gray border-r"/>
+							<div className="rounded-tr-lg border-t bg-neutral-100 dark:bg-gray border-r"/>
+							<div className="bg-neutral-100 dark:bg-gray border-r"/>
+							<div className="bg-neutral-100 dark:bg-gray border-r"/>
+							<div className="bg-neutral-100 dark:bg-gray border-r"/>
+							<div className="rounded-br-lg border-b bg-neutral-100 dark:bg-gray border-r"/>
 						</div>
 					</div>
 
@@ -131,7 +131,7 @@ export default function BKP() {
 					</Box>
 
 					<Box img className="lg:col-span-2">
-						<Img src="/bkp/welding.png" alt="Сварка"/>
+						<Img src="/bkp/welding.jpg" alt="Сварка"/>
 					</Box>
 
 					<Box img className="lg:col-span-2">

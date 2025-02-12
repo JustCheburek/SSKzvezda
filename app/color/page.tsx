@@ -51,10 +51,6 @@ export default function Color() {
 						</Ul>
 					</Box>
 
-					<Box img>
-						<Img src="/color/master.jpg" alt="Секция"/>
-					</Box>
-
 					<Box>
 						<Heading>
 							Основное сырьё
