@@ -103,7 +103,7 @@ export default function BKP() {
 					</Box>
 
 					<Box img className="lg:col-span-2">
-						<Img src="/bkp/people_welding.jpg" alt="Сварка"/>
+						<Img src="/bkp/people_welding.jpg" alt="Сварка под руководством человека"/>
 					</Box>
 
 					<Box>

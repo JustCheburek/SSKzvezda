@@ -17,28 +17,13 @@ export default function Color() {
 				</Name>
 
 				<Container>
-					<Box className="text-center">
+					<Box>
 						<Heading>
 							Камера очистки
 						</Heading>
 						<P>
 							Дробеструйная очистка поверхностей секций судов
 						</P>
-					</Box>
-
-					<Box className="text-center">
-						<Heading>
-							3 камеры окраски и сушки
-						</Heading>
-						<P>
-							Окраски и сушка поверхностей секций судов
-						</P>
-					</Box>
-
-					<Box>
-						<Heading>
-							Камеры
-						</Heading>
 						<Ul>
 							<li>
 								<P>
@@ -49,6 +34,19 @@ export default function Color() {
 								до 400 т.
 							</li>
 						</Ul>
+					</Box>
+
+					<Box img>
+						<Img src="/color/block.png" alt="Секция"/>
+					</Box>
+
+					<Box className="text-center">
+						<Heading>
+							3 камеры окраски и сушки
+						</Heading>
+						<P>
+							Окраски и сушка поверхностей секций судов
+						</P>
 					</Box>
 
 					<Box>
@@ -70,8 +68,8 @@ export default function Color() {
 						</Ul>
 					</Box>
 
-					<Box img>
-						<Img src="/color/block.webp" alt="Секция"/>
+					<Box img className="md:col-span-2">
+						<Img src="/color/master.png" alt="Мастер"/>
 					</Box>
 				</Container>
 			</Main>
