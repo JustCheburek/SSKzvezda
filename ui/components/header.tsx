@@ -40,11 +40,11 @@ export function Header() {
 								Этапы
 							</HeaderLink>
 						</li>
-						<li>
+						{/*<li>
 							<HeaderLink href="/map" title="Карта цехов">
 								Карта
 							</HeaderLink>
-						</li>
+						</li>*/}
 						<li>
 							<HeaderLink href="https://sskzvezda.ru/" title="Официальный сайт">
 								ССК Звезда
