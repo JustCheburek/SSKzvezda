@@ -92,8 +92,7 @@ export type BooleanDirections = {
 export type ArrowLinkProps = LinkProps & ComponentPropsWithoutRef<"a"> & BooleanDirections
 export const ArrowLink = (
 		{
-			className = "", left = false, right = false,
-			...props
+			className = "", left = false, right = false, ...props
 		}: ArrowLinkProps) => (
 		<Link
 				{...props}

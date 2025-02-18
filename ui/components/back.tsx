@@ -13,8 +13,8 @@ export function Back({className = "", ...props}: Back) {
 					href={`/#${path}`}
 					className={cn("text-center my-4", className)}
 					title="Назад"
-					{...props}
 					left
+					{...props}
 			/>
 	)
 }

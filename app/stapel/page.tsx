@@ -1,5 +1,5 @@
 import {BlockQuote, H2, P, Ul} from "@components/text";
-import {Box, Container, Heading, Main, Name} from "@components/basic";
+import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
@@ -37,11 +37,28 @@ export default function Stapel() {
 							</BlockQuote>
 						</div>
 					</Box>
+					<Box img>
+						<Img src="/stapel/1.jpg" alt="Стапель"/>
+					</Box>
+					<Box img>
+						<Img src="/stapel/4.jpg" alt="Стапель"/>
+					</Box>
+					<Box img>
+						<Img src="/stapel/3.jpg" alt="Стапель"/>
+					</Box>
+					<Box img>
+						<Img src="/stapel/2.jpg" alt="Стапель"/>
+					</Box>
 					<Box>
 						<Heading>
 							Козловые краны
 						</Heading>
 						<Ul>
+							<li>
+								<P>
+									120x189 метров
+								</P>
+							</li>
 							<li>
 								<P>
 									до 1100 тонн
