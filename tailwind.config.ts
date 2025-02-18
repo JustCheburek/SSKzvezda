@@ -9,7 +9,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				ssk: "var(--unic)",
+				unic: "var(--unic)",
 				background: "var(--background)",
 				"light-gray": "#808080",
 				gray: "#232323"

@@ -9,7 +9,7 @@ function HeaderLink({href, children, className="", ...props}: PropsWithChildren<
 			<NavLink
 					href={href}
 					className="px-4 py-2 hover:bg-blue-300/15 rounded-xl transition-colors duration-500"
-					activeClassName="text-ssk"
+					activeClassName="text-unic"
 					{...props}
 			>
 				{children}
@@ -29,11 +29,11 @@ export function Header() {
 					</H3>
 				</Link>
 
-				<div className="size-10 sm:hidden">
+				{/*<div className="size-10 sm:hidden">
 					<span className="icon-[iconamoon--menu-burger-horizontal-duotone] size-full dark:text-neutral-200/90"/>
-				</div>
+				</div>*/}
 
-				<nav className="hidden sm:block">
+				<nav className="hidden sm:flex">
 					<ul className="flex justify-end gap-8 list-none font-medium">
 						<li>
 							<HeaderLink href="/" title="Этапы создания судна">
@@ -45,8 +45,8 @@ export function Header() {
 								Карта
 							</HeaderLink>
 						</li>*/}
-						<li>
-							<HeaderLink href="https://sskzvezda.ru/" title="Официальный сайт">
+						<li className="hidden md:block">
+							<HeaderLink href="https://sskzvezda.ru/" title="Официальный сайт" target="_blank">
 								ССК Звезда
 							</HeaderLink>
 						</li>

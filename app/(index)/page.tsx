@@ -1,8 +1,9 @@
-import {H1, H2, H3, P} from "@components/text";
+import {H1, H2, H3} from "@components/text";
 import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
 import {cn} from "@server/cn";
-import Link, {LinkProps} from "next/link";
-import {Metadata} from "next";
+import Link, {type LinkProps} from "next/link";
+import type {Metadata} from "next";
+import {ArrowLink, type StringDirections} from "@components/basic";
 
 export const metadata: Metadata = {
 	title: "Этапы"
@@ -16,30 +17,6 @@ const LinkOrNull = ({children, href}: PropsWithChildren<{ href?: LinkProps["href
 	return <Link href={href}>{children}</Link>
 }
 
-type StringDirections = {
-	left?: string
-	right?: string
-}
-type BooleanDirections = {
-	left?: boolean
-	right?: boolean
-}
-
-const ArrowLink = (
-		{
-			className = "", left = false, right = false,
-			...props
-		}: LinkProps & ComponentPropsWithoutRef<"a"> & BooleanDirections) => (
-		<Link
-				{...props}
-				className={cn(
-						"size-12 text-black/90 dark:text-neutral-500/80 hover:text-ssk transition-colors duration-300",
-						{"mr-auto": left},
-						{"ml-auto": right},
-						className
-				)}
-		/>
-)
 const Box = (
 		{
 			children, className = "", left, right, ...props
@@ -54,19 +31,11 @@ const Box = (
 
 			<div className="w-full flex flex-0 mb-12 px-[5vw]">
 				{left
-						? <ArrowLink href={`#${left}`} left>
-								<span
-										className="icon-[heroicons--arrow-left-circle-16-solid] size-full"
-								/>
-							</ArrowLink>
+						? <ArrowLink href={`#${left}`} left/>
 						: <div/>
 				}
 				{right
-						? <ArrowLink href={`#${right}`} right>
-								<span
-										className="icon-[heroicons--arrow-right-circle-16-solid] size-full"
-								/>
-							</ArrowLink>
+						? <ArrowLink href={`#${right}`} right/>
 						: <div/>
 				}
 			</div>
@@ -93,12 +62,6 @@ const Year = ({children}: PropsWithChildren) => (
 		</H2>
 )
 
-const Meaning = ({children}: PropsWithChildren) => (
-		<P className="absolute right-12 top-10 hidden xs:block">
-			{children}
-		</P>
-)
-
 export default function Stages() {
 	return (
 			<main className="overflow-x-scroll overflow-y-clip flex w-auto snap-mandatory snap-x scroll-smooth">
@@ -116,17 +79,16 @@ export default function Stages() {
 					<H1>
 						Согласование
 					</H1>
+					<Text>
+						Всё должно быть по ГОСТу
+					</Text>
 				</Box>
 				<Box id="bkp" left="approval" right="color">
 					<Heading href="/bkp">
 						БКП
 					</Heading>
-					<Meaning>
-						Блок корпусных производств
-					</Meaning>
 					<Text>
-						6 пролётов:<br/>
-						5 горизонтальных + 1 вертикальный
+						Блок корпусных производств
 					</Text>
 					<Year>
 						2019
@@ -148,11 +110,8 @@ export default function Stages() {
 					<Heading href="/tssb">
 						ЦСБ
 					</Heading>
-					<Meaning>
-						Цех сборки блоков
-					</Meaning>
 					<Text>
-						Сборка и сварка секций
+						Цех сборки блоков
 					</Text>
 					<Year>
 						2019

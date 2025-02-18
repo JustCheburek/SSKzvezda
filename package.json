@@ -1,31 +1,32 @@
 {
-  "name": "ssk",
-  "version": "1.0.0",
-  "private": false,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@iconify-json/iconamoon": "^1.2.2",
-    "clsx": "^2.1.1",
-    "critters": "^0.0.25",
-    "next": "^15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.6.0"
-  },
-  "devDependencies": {
-    "@iconify-json/heroicons": "^1.2.2",
-    "@iconify/tailwind": "^1.2.0",
-    "@types/node": "^20.17.17",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "postcss": "^8.5.2",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3"
-  },
-  "type": "module"
+	"name": "ssk",
+	"version": "1.0.0",
+	"private": false,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"critters": "^0.0.25",
+		"next": "^15.1.7",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@iconify-json/iconamoon": "^1.2.2",
+		"@iconify-json/heroicons": "^1.2.2",
+		"@iconify/tailwind": "^1.2.0",
+		"@tailwindcss/postcss": "^4.0.6",
+		"@types/node": "^20.17.19",
+		"@types/react": "^19.0.10",
+		"@types/react-dom": "^19.0.4",
+		"postcss": "^8.5.2",
+		"tailwindcss": "3.4.17",
+		"tailwind-merge": "^2.6.0",
+		"clsx": "^2.1.1",
+		"typescript": "^5.7.3"
+	},
+	"type": "module"
 }

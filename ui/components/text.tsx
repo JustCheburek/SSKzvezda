@@ -10,7 +10,7 @@ export const H1 = (
 ) => (
 		<h1 className={cn(
 				"text-5xl xs:text-7xl md:text-8xl xl:text-9xl font-semibold",
-				{"text-ssk": color},
+				{"text-unic": color},
 				className
 		)}>
 			{children}
@@ -23,7 +23,7 @@ export const H2 = (
 		<h2 className={cn(
 				"text-3xl xs:text-4xl font-medium",
 				{"dark:text-neutral-100": !color},
-				{"text-ssk": color},
+				{"text-unic": color},
 				className
 		)}>
 			{children}

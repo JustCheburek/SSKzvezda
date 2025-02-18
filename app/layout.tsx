@@ -3,6 +3,7 @@ import "./globals.css";
 import {PropsWithChildren} from "react";
 import {Open_Sans} from "next/font/google";
 import {Header} from "@components/header";
+import {cn} from "@server/cn";
 
 const OpenSans = Open_Sans({subsets: ["latin"], preload: true, style: "normal"});
 
@@ -35,7 +36,10 @@ export default function RootLayout(
 		}: PropsWithChildren) {
 	return (
 			<html lang="ru">
-			<body className={`${OpenSans.className} text-balance bg-background accent-ssk caret-ssk selection:bg-blue-300/10 selection:text-blue-200/80 break-words dark:text-neutral-300`}>
+			<body className={cn(
+					OpenSans.className,
+					"text-balance bg-white/95 dark:text-neutral-300 dark:bg-neutral-900/90 dark accent-ssk caret-ssk selection:bg-blue-300/10 selection:text-blue-200/80 break-words"
+			)}>
 			<Header/>
 			{children}
 			</body>
