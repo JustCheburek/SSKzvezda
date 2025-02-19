@@ -1,4 +1,4 @@
-import {H2, P, Ul} from "@components/text";
+import {H2, Ul} from "@components/text";
 import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
 import type {Metadata} from "next";
 
@@ -21,14 +21,12 @@ export default function Color() {
 						<Heading>
 							Камера очистки
 						</Heading>
-						<P>
+						<p>
 							Дробеструйная очистка поверхностей секций судов
-						</P>
+						</p>
 						<Ul>
 							<li>
-								<P>
-									23х27х10 метров
-								</P>
+								23х27х10 метров
 							</li>
 							<li>
 								до 400 т.
@@ -44,9 +42,9 @@ export default function Color() {
 						<Heading>
 							3 камеры окраски и сушки
 						</Heading>
-						<P>
+						<p>
 							Окраски и сушка поверхностей секций судов
-						</P>
+						</p>
 					</Box>
 
 					<Box>
@@ -55,15 +53,11 @@ export default function Color() {
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									Стальная колотая дробь — абразивный материал для очистки поверхности
-								</P>
+								Стальная колотая дробь — абразивный материал для очистки поверхности
 							</li>
 							<li>
-								<P>
-									Для грунтовки и окраски используется большой список красок ведущих мировых и отечественных
-									производителей
-								</P>
+								Для грунтовки и окраски используется большой список красок ведущих мировых и отечественных
+								производителей
 							</li>
 						</Ul>
 					</Box>

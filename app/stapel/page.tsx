@@ -1,4 +1,4 @@
-import {BlockQuote, H2, P, Ul} from "@components/text";
+import {BlockQuote, H2, Ul} from "@components/text";
 import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
 import type {Metadata} from "next";
 
@@ -14,9 +14,9 @@ export default function Stapel() {
 					<H2 color>
 						Стапель
 					</H2>
-					<P>
+					<p>
 						крупнейшее спусковое сооружение в России
-					</P>
+					</p>
 				</Name>
 
 				<Container>
@@ -27,9 +27,9 @@ export default function Stapel() {
 						<div>
 							<Ul>
 								<li>
-									<P>
+									<p>
 										до 1200 тонн
-									</P>
+									</p>
 								</li>
 							</Ul>
 							<BlockQuote>
@@ -37,17 +37,17 @@ export default function Stapel() {
 							</BlockQuote>
 						</div>
 					</Box>
-					<Box img>
+					<Box img className="lg:col-span-2 lg:row-span-2">
 						<Img src="/stapel/1.jpg" alt="Стапель"/>
 					</Box>
 					<Box img>
-						<Img src="/stapel/4.jpg" alt="Стапель"/>
+						<Img src="/stapel/2.jpg" alt="Стапель"/>
 					</Box>
 					<Box img>
 						<Img src="/stapel/3.jpg" alt="Стапель"/>
 					</Box>
 					<Box img>
-						<Img src="/stapel/2.jpg" alt="Стапель"/>
+						<Img src="/stapel/10.jpg" alt="Стапель"/>
 					</Box>
 					<Box>
 						<Heading>
@@ -55,14 +55,10 @@ export default function Stapel() {
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									120x189 метров
-								</P>
+								120x189 метров
 							</li>
 							<li>
-								<P>
-									до 1100 тонн
-								</P>
+								до 1100 тонн
 							</li>
 						</Ul>
 					</Box>

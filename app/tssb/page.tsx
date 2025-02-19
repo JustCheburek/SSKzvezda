@@ -1,4 +1,4 @@
-import {H2, P, Ul} from "@components/text";
+import {H2, Ul} from "@components/text";
 import {Box, Container, Heading, Main, Name} from "@components/basic";
 import type {Metadata} from "next";
 
@@ -14,9 +14,9 @@ export default function TSSB() {
 					<H2 color>
 						ЦСБ
 					</H2>
-					<P>
+					<p>
 						цех сборки блоков
-					</P>
+					</p>
 				</Name>
 
 				<Container>
@@ -26,22 +26,18 @@ export default function TSSB() {
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									116x174 метров
-								</P>
+								116x174 метров
 							</li>
 							<li>
-								<P>
-									до 2300 тонн
-								</P>
+								до 2300 тонн
 							</li>
 						</Ul>
 					</Box>
 
 					<Box>
-						<P className="text-center">
+						<p className="text-center">
 							Сборка и сварка секций и блоков из узлов и деталей
-						</P>
+						</p>
 					</Box>
 				</Container>
 			</Main>

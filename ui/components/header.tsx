@@ -33,7 +33,7 @@ export function Header() {
 					<span className="icon-[iconamoon--menu-burger-horizontal-duotone] size-full dark:text-neutral-200/90"/>
 				</div>*/}
 
-				<nav className="hidden sm:flex">
+				<nav className="hidden md:flex">
 					<ul className="flex justify-end gap-8 list-none font-medium">
 						<li>
 							<HeaderLink href="/" title="Этапы создания судна">
@@ -45,7 +45,7 @@ export function Header() {
 								Карта
 							</HeaderLink>
 						</li>*/}
-						<li className="hidden md:block">
+						<li>
 							<HeaderLink href="https://sskzvezda.ru/" title="Официальный сайт" target="_blank">
 								ССК Звезда
 							</HeaderLink>

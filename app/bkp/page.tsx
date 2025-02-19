@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {BlockQuote, H2, H3, P, Ul} from "@components/text";
+import {BlockQuote, H2, H3, Ul} from "@components/text";
 import {Box, Container, Heading, Img, Main, Name} from "@components/basic";
 
 export const metadata: Metadata = {
@@ -14,64 +14,46 @@ export default function BKP() {
 					<H2 color>
 						БКП
 					</H2>
-					<P>
+					<p>
 						блок корпусных производств
-					</P>
+					</p>
 				</Name>
 
 				<Container>
-					<Box img>
-						<Img src="/block.jpg" alt="Секция судна"/>
-					</Box>
-
 					<Box>
 						<Heading>
 							Изготовление секций и блоков судна
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									до 23×13×12 метров
-								</P>
+								до 23×13×12 метров
 							</li>
 							<li>
-								<P>
-									до 300 тонн
-								</P>
+								до 300 тонн
 							</li>
 						</Ul>
 					</Box>
 
-					<Box>
-						<Heading>
-							Производственная мощность
-						</Heading>
-						<Ul>
-							<li>
-								<P>
-									обрабатываемый металл — до 90 тысяч тонн в год
-								</P>
-							</li>
-							<li>
-								<P>
-									сборка судов — до 145 тысяч тонн в год
-								</P>
-							</li>
-						</Ul>
+					<Box img className="lg:col-span-2 lg:row-span-2 lg:min-h-96">
+						<Img src="/bkp/building.jpg" alt="Цех"/>
+					</Box>
+
+					<Box img>
+						<Img src="/block.jpg" alt="Секция судна"/>
 					</Box>
 
 					<div className="relative grid grid-cols-7 gap-2 *:border-light-gray min-h-40">
-						<P className="absolute left-[3%] top-[50%] translate-y-[-50%] [writing-mode:vertical-lr] rotate-180">
+						<p className="absolute left-[3%] top-[50%] translate-y-[-50%] [writing-mode:vertical-lr] rotate-180">
 							Вертикальный
-						</P>
+						</p>
 						<div className="rounded-tl-lg rounded-bl-lg border-l border-t border-b bg-neutral-100 dark:bg-gray"/>
 						<div className="relative grid col-span-6 gap-2 *:border-light-gray">
-							<H3 className="absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+							<H3 className="absolute top-[29%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
 								Пролёты
 							</H3>
-							<P className="w-max absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+							<p className="w-max absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
 								5 горизонтальных
-							</P>
+							</p>
 							<div className="rounded-tr-lg border-t bg-neutral-100 dark:bg-gray border-r"/>
 							<div className="bg-neutral-100 dark:bg-gray border-r"/>
 							<div className="bg-neutral-100 dark:bg-gray border-r"/>
@@ -80,10 +62,6 @@ export default function BKP() {
 						</div>
 					</div>
 
-					<Box img>
-						<Img src="/bkp/building.jpg" alt="Цех"/>
-					</Box>
-
 					<Box>
 						<Heading>
 							Мостовые краны
@@ -91,15 +69,27 @@ export default function BKP() {
 						<div>
 							<Ul>
 								<li>
-									<P>
-										до 120 тонн
-									</P>
+									до 120 тонн
 								</li>
 							</Ul>
 							<BlockQuote>
 								«Работают один за другим»
 							</BlockQuote>
 						</div>
+					</Box>
+
+					<Box>
+						<Heading>
+							Производственная мощность
+						</Heading>
+						<Ul>
+							<li>
+								обработка металла — до 90 тысяч тонн в год
+							</li>
+							<li>
+								сборка судов — до 145 тысяч тонн в год
+							</li>
+						</Ul>
 					</Box>
 
 					<Box img className="lg:col-span-2">
@@ -112,24 +102,16 @@ export default function BKP() {
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									Линии термической резки металла
-								</P>
+								Линии термической резки металла
 							</li>
 							<li>
-								<P>
-									Машины резки и правки профилей
-								</P>
+								Машины резки и правки профилей
 							</li>
 							<li>
-								<P>
-									Линии изготовления тавровых блоков, плоских секций, криволинейных и микропанеле
-								</P>
+								Линии изготовления тавровых блоков, плоских секций, криволинейных и микропанеле
 							</li>
 							<li>
-								<P>
-									Станки для снятия заусенцев и скругления кромок
-								</P>
+								Станки для снятия заусенцев и скругления кромок
 							</li>
 						</Ul>
 					</Box>
@@ -138,9 +120,9 @@ export default function BKP() {
 						<Heading>
 							Высокоточная роботизированная система
 						</Heading>
-						<P>
+						<p>
 							Резка металла с точностью позиционирования до 0,5 мм.
-						</P>
+						</p>
 					</Box>
 
 					<Box img className="lg:col-span-2">
@@ -157,15 +139,10 @@ export default function BKP() {
 						</Heading>
 						<Ul>
 							<li>
-								<P>
-									Подготовка высококвалифицированных
-									специалистов
-								</P>
+								Подготовка высококвалифицированных специалистов
 							</li>
 							<li>
-								<P>
-									Проведения испытаний инновационного сварочного оборудования и технологий
-								</P>
+								Проведения испытаний инновационного сварочного оборудования и технологий
 							</li>
 						</Ul>
 					</Box>

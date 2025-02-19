@@ -1,4 +1,4 @@
-import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
+import {PropsWithChildren} from "react";
 import {cn} from "@server/cn";
 
 type TextProps = PropsWithChildren<{
@@ -39,17 +39,6 @@ export const H3 = (
 		)}>
 			{children}
 		</h3>
-);
-
-export const P = (
-		{children, className, ...props}: PropsWithChildren<ComponentPropsWithoutRef<"p">>
-) => (
-		<p className={cn(
-				"",
-				className
-		)} {...props}>
-			{children}
-		</p>
 );
 
 export const Small = (
