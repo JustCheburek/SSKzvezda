@@ -24,7 +24,7 @@ const Box = (
 
 			{linkable
 					? <Link
-							href={`#${id}`}
+							href={`/${id}`}
 							className="flex flex-col justify-center items-center gap-4 flex-1"
 					>
 						{children}
