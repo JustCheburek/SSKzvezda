@@ -95,13 +95,11 @@ export const ArrowLink = (
 			className = "", left = false, right = false, ...props
 		}: ArrowLinkProps) => (
 		<Link
-				{...props}
 				className={cn(
 						"size-12 text-black/90 dark:text-neutral-500/80 hover:text-unic transition-colors duration-300",
-						{"mr-auto": left},
-						{"ml-auto": right},
 						className
 				)}
+				{...props}
 		>
 			<span
 					className={cn(

@@ -1,7 +1,7 @@
 import {H1, H2, H3} from "@components/text";
 import {ComponentPropsWithoutRef, PropsWithChildren} from "react";
 import {cn} from "@server/cn";
-import Link, {type LinkProps} from "next/link";
+import Link from "next/link";
 import type {Metadata} from "next";
 import {ArrowLink, type StringDirections} from "@components/basic";
 
@@ -9,27 +9,33 @@ export const metadata: Metadata = {
 	title: "Этапы"
 }
 
-const LinkOrNull = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => {
-	if (!href) {
-		return children
-	}
-
-	return <Link href={href}>{children}</Link>
-}
-
 const Box = (
 		{
-			children, className = "", left, right, ...props
-		}: ComponentPropsWithoutRef<"div"> & StringDirections) => (
-		<section className={cn(
-				"relative flex flex-col justify-center items-center text-center min-w-[100dvw] max-w-[100dvw] snap-center",
-				className
-		)} {...props}>
-			<div className="flex flex-col justify-center items-center gap-4 flex-1">
-				{children}
-			</div>
+			children, className = "", left, right, id, linkable = false, ...props
+		}: ComponentPropsWithoutRef<"a"> & StringDirections & { linkable?: boolean }) => (
+		<section
+				className={cn(
+						"relative flex flex-col justify-center items-center text-center min-w-[100dvw] max-w-[100dvw] snap-center",
+						className
+				)}
+				id={id}
+				{...props}
+		>
 
-			<div className="w-full flex flex-0 mb-12 px-[5vw]">
+			{linkable
+					? <Link
+							href={`#${id}`}
+							className="flex flex-col justify-center items-center gap-4 flex-1"
+					>
+						{children}
+					</Link>
+					: <div className="flex flex-col justify-center items-center gap-4 flex-1">
+						{children}
+					</div>
+			}
+
+
+			<div className="w-full flex flex-0 justify-between mb-12 px-[5vw]">
 				{left
 						? <ArrowLink href={`#${left}`} left/>
 						: <div/>
@@ -42,12 +48,10 @@ const Box = (
 		</section>
 )
 
-const Heading = ({children, href}: PropsWithChildren<{ href?: LinkProps["href"] }>) => (
-		<LinkOrNull href={href}>
-			<H1 className="grid gap-2">
-				{children}
-			</H1>
-		</LinkOrNull>
+const Heading = ({children}: PropsWithChildren) => (
+		<H1 className="grid gap-2">
+			{children}
+		</H1>
 )
 
 const Text = ({children}: PropsWithChildren) => (
@@ -83,8 +87,8 @@ export default function Stages() {
 						Всё должно быть по ГОСТу
 					</Text>
 				</Box>
-				<Box id="bkp" left="approval" right="color">
-					<Heading href="/bkp">
+				<Box id="bkp" left="approval" right="color" linkable>
+					<Heading>
 						БКП
 					</Heading>
 					<Text>
@@ -94,8 +98,8 @@ export default function Stages() {
 						2019
 					</Year>
 				</Box>
-				<Box id="color" left="bkp" right="tssb">
-					<Heading href="/color">
+				<Box id="color" left="bkp" right="tssb" linkable>
+					<Heading>
 						Окраска
 					</Heading>
 					<Text>
@@ -106,8 +110,8 @@ export default function Stages() {
 						2019
 					</Year>
 				</Box>
-				<Box id="tssb" left="color" right="stapel">
-					<Heading href="/tssb">
+				<Box id="tssb" left="color" right="stapel" linkable>
+					<Heading>
 						ЦСБ
 					</Heading>
 					<Text>
@@ -117,8 +121,8 @@ export default function Stages() {
 						2019
 					</Year>
 				</Box>
-				<Box id="stapel" left="tssb" right="dok">
-					<Heading href="/stapel">
+				<Box id="stapel" left="tssb" right="dok" linkable>
+					<Heading>
 						Стапель
 					</Heading>
 					<Text>
@@ -128,8 +132,8 @@ export default function Stages() {
 						2019
 					</Year>
 				</Box>
-				<Box id="dok" left="stapel" right="water">
-					<Heading href="/dok">
+				<Box id="dok" left="stapel" right="water" linkable>
+					<Heading>
 						Сухой док
 					</Heading>
 					<Text>

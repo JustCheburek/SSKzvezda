@@ -38,7 +38,7 @@ export default function RootLayout(
 			<html lang="ru">
 			<body className={cn(
 					OpenSans.className,
-					"text-balance bg-white/95 dark:text-neutral-300 dark:bg-neutral-900/90 dark accent-ssk caret-ssk selection:bg-blue-300/10 selection:text-blue-200/80 break-words"
+					"text-balance bg-white/95 dark:text-neutral-300 dark:bg-neutral-900/95 dark accent-ssk caret-ssk selection:bg-blue-300/10 selection:text-blue-200/80 break-words"
 			)}>
 			<Header/>
 			{children}
