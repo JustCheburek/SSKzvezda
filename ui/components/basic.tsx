@@ -10,7 +10,7 @@ type Main = ComponentPropsWithoutRef<"main">
 export function Main({children, className = "", ...props}: PropsWithChildren<Main>) {
 	return (
 			<main
-					className={cn("container mx-auto", className)}
+					className={cn("container mx-auto px-2", className)}
 					{...props}
 			>
 				{children}
