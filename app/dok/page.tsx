@@ -11,7 +11,7 @@ export default function Dok() {
 	return (
 			<Main>
 				<Name>
-					<H2 color>
+					<H2>
 						Сухой док
 					</H2>
 					<p>
@@ -21,7 +21,7 @@ export default function Dok() {
 
 				<Container>
 					<Box img className="lg:col-span-2 lg:row-span-2">
-						<Img src="/dok/сухойдок1.jpg" alt="Док с кораблём внутри"/>
+						<Img src="/dok/sudno.jpg" alt="Док с кораблём внутри"/>
 					</Box>
 					<Box>
 						<Heading>
@@ -65,7 +65,7 @@ export default function Dok() {
 						</Ul>
 					</Box>
 					<Box img>
-						<Img src="/dok/830A7753.jpg" alt="Пустой док"/>
+						<Img src="/dok/clear.jpg" alt="Пустой док"/>
 					</Box>
 					<Box>
 						<Heading>
@@ -90,7 +90,7 @@ export default function Dok() {
 						</Ul>
 					</Box>
 					<Box img className="lg:col-span-2 lg:row-span-3">
-						<Img src="/dok/DJI_0001.jpg" alt="Док с водой внутри"/>
+						<Img src="/dok/water_in.jpg" alt="Док с водой внутри"/>
 					</Box>
 					<Box>
 						<Heading>

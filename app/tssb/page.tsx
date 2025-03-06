@@ -11,7 +11,7 @@ export default function TSSB() {
 	return (
 			<Main>
 				<Name>
-					<H2 color>
+					<H2>
 						ЦСБ
 					</H2>
 					<p>

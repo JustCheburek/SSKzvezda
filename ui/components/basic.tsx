@@ -51,7 +51,7 @@ export function Box({children, className = "", img = false, ...props}: PropsWith
 	return (
 			<article
 					className={cn(
-							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray",
+							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray size-full *:z-20 group",
 							{"overflow-clip min-h-80": img},
 							className
 					)}

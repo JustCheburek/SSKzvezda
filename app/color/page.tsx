@@ -11,7 +11,7 @@ export default function Color() {
 	return (
 			<Main>
 				<Name>
-					<H2 color>
+					<H2>
 						Окраска
 					</H2>
 				</Name>

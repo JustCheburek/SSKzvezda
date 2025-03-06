@@ -11,7 +11,7 @@ export default function Stapel() {
 	return (
 			<Main>
 				<Name>
-					<H2 color>
+					<H2>
 						Стапель
 					</H2>
 					<p>

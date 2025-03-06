@@ -11,7 +11,7 @@ export default function BKP() {
 	return (
 			<Main>
 				<Name>
-					<H2 color>
+					<H2>
 						БКП
 					</H2>
 					<p>
