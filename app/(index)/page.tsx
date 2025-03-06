@@ -134,6 +134,7 @@ export default function Stages() {
 				<Section id="tssb" left="color" right="stapel">
 					<LinkBox href="/tssb">
 						<Figure>
+							<BgImg src="/tssb/tssb.jpeg" alt="ЦСБ"/>
 							<Heading>
 								ЦСБ
 							</Heading>

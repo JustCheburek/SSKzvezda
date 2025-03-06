@@ -1,5 +1,5 @@
 import {H2, Ul} from "@components/text";
-import {Box, Container, Heading, Main, Name} from "@components/basic";
+import {Box, Container, Figure, Heading, Img, Main, Name} from "@components/basic";
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
@@ -33,6 +33,10 @@ export default function TSSB() {
 							</li>
 						</Ul>
 					</Box>
+
+					<Figure className="lg:col-span-2 md:row-span-2 lg:min-h-96">
+						<Img src="/tssb/tssb.jpeg" alt="ЦСБ"/>
+					</Figure>
 
 					<Box>
 						<p className="text-center">
