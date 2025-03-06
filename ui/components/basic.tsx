@@ -6,6 +6,7 @@ import {Back} from "@components/back";
 import Link, {LinkProps} from "next/link";
 
 type Main = ComponentPropsWithoutRef<"main">
+
 export function Main({children, className = "", ...props}: PropsWithChildren<Main>) {
 	return (
 			<main
@@ -18,6 +19,7 @@ export function Main({children, className = "", ...props}: PropsWithChildren<Mai
 }
 
 type Container = ComponentPropsWithoutRef<"section">
+
 export function Container({children, className = "", ...props}: PropsWithChildren<Container>) {
 	return (
 			<section
@@ -30,6 +32,7 @@ export function Container({children, className = "", ...props}: PropsWithChildre
 }
 
 type Name = ComponentPropsWithoutRef<"div">
+
 export function Name({children, className = "", ...props}: PropsWithChildren<Name>) {
 	return (
 			<div
@@ -44,15 +47,13 @@ export function Name({children, className = "", ...props}: PropsWithChildren<Nam
 	)
 }
 
-type Box = {
-	img?: boolean
-} & ComponentPropsWithoutRef<"article">
-export function Box({children, className = "", img = false, ...props}: PropsWithChildren<Box>) {
+type Box = ComponentPropsWithoutRef<"article">
+
+export function Box({children, className = "", ...props}: PropsWithChildren<Box>) {
 	return (
 			<article
 					className={cn(
-							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray size-full *:z-20 group",
-							{"overflow-clip min-h-80": img},
+							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray",
 							className
 					)}
 					{...props}
@@ -62,7 +63,24 @@ export function Box({children, className = "", img = false, ...props}: PropsWith
 	)
 }
 
+type Figure = ComponentPropsWithoutRef<"figure">
+
+export function Figure({children, className = "", ...props}: Figure) {
+	return (
+			<figure
+					className={cn(
+							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray overflow-clip min-h-80 size-full *:z-20 group",
+							className
+					)}
+					{...props}
+			>
+				{children}
+			</figure>
+	)
+}
+
 type Heading = ComponentPropsWithoutRef<"h3">
+
 export function Heading({children, className = "", ...props}: PropsWithChildren<Heading>) {
 	return (
 			<H3 className={cn("text-center", className)} {...props}>
@@ -78,6 +96,27 @@ export function Img({src, alt, fill = true, className = "", ...props}: ImageProp
 					className={cn("hover:scale-110 duration-500", className)}
 					{...props}
 			/>
+	)
+}
+
+type Caption = {
+	dir?: "rtl" | "ltr"
+} & ComponentPropsWithoutRef<"figcaption">
+
+export function Caption({children, dir = "rtl", className = "", ...props}: Caption) {
+	return (
+			<figcaption
+					dir={dir}
+					className={cn(
+							"absolute start-0 bottom-0 bg-neutral-700/50 backdrop-blur-sm px-6 py-2 border-t border-light-gray",
+							{"border-l rounded-tl-xl": dir === "rtl"},
+							{"border-r rounded-tr-xl": dir === "ltr"},
+							className
+					)}
+					{...props}
+			>
+				{children}
+			</figcaption>
 	)
 }
 

@@ -46,7 +46,7 @@ export function Header() {
 							</HeaderLink>
 						</li>*/}
 						<li>
-							<HeaderLink href="https://sskzvezda.ru/" title="Официальный сайт" target="_blank">
+							<HeaderLink href={new URL(process.env.NEXT_PUBLIC_SSKURL!).toString()} title="Официальный сайт" target="_blank">
 								ССК Звезда
 							</HeaderLink>
 						</li>

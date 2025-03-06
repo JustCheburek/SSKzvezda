@@ -1,7 +1,7 @@
 import {H1, H2, H3} from "@components/text";
 import {cn} from "@server/cn";
 import Link, {LinkProps} from "next/link";
-import {ArrowLink, Box, Img, type StringDirections} from "@components/basic";
+import {ArrowLink, Figure, Img, type StringDirections} from "@components/basic";
 import type {ComponentPropsWithoutRef, PropsWithChildren} from "react";
 import type {Metadata} from "next";
 import type {ImageProps} from "next/image";
@@ -100,7 +100,7 @@ export default function Stages() {
 				</Section>
 				<Section id="bkp" left="approval" right="color">
 					<LinkBox href="/bkp">
-						<Box img>
+						<Figure>
 							<BgImg src="/bkp/building.jpg" alt="БКП"/>
 							<Heading>
 								БКП
@@ -111,12 +111,12 @@ export default function Stages() {
 							<Year>
 								2019
 							</Year>
-						</Box>
+						</Figure>
 					</LinkBox>
 				</Section>
 				<Section id="color" left="bkp" right="tssb">
 					<LinkBox href="/color">
-						<Box img>
+						<Figure>
 							<BgImg src="/color/master.png" alt="Мастер"/>
 							<Heading>
 								Окраска
@@ -128,12 +128,12 @@ export default function Stages() {
 							<Year>
 								2019
 							</Year>
-						</Box>
+						</Figure>
 					</LinkBox>
 				</Section>
 				<Section id="tssb" left="color" right="stapel">
 					<LinkBox href="/tssb">
-						<Box img>
+						<Figure>
 							<Heading>
 								ЦСБ
 							</Heading>
@@ -143,12 +143,12 @@ export default function Stages() {
 							<Year>
 								2019
 							</Year>
-						</Box>
+						</Figure>
 					</LinkBox>
 				</Section>
 				<Section id="stapel" left="tssb" right="dok">
 					<LinkBox href="/stapel">
-						<Box img>
+						<Figure>
 							<BgImg src="/stapel/2K5A1325.jpg" alt="Стапель"/>
 							<Heading>
 								Стапель
@@ -159,12 +159,12 @@ export default function Stages() {
 							<Year>
 								2019
 							</Year>
-						</Box>
+						</Figure>
 					</LinkBox>
 				</Section>
 				<Section id="dok" left="stapel" right="water">
 					<LinkBox href="/dok">
-						<Box img>
+						<Figure>
 							<BgImg src="/dok/water_in.jpg" alt="Сухой док с водой внутри"/>
 							<Heading>
 								Сухой док
@@ -175,16 +175,21 @@ export default function Stages() {
 							<Year>
 								2021
 							</Year>
-						</Box>
+						</Figure>
 					</LinkBox>
 				</Section>
 				<Section id="water" left="dok">
-					<Heading>
-						В добрый путь
-					</Heading>
-					<Text>
-						Церемония спуска на воду
-					</Text>
+					<LinkBox href="/water">
+						<Figure>
+							<BgImg src="/water/afra.jpg" alt="Афрамакс"/>
+							<Heading>
+								В добрый путь
+							</Heading>
+							<Text>
+								Церемония спуска на воду
+							</Text>
+						</Figure>
+					</LinkBox>
 				</Section>
 			</main>
 	);
