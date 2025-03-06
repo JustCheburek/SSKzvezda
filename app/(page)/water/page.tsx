@@ -4,7 +4,7 @@ import {Box, Caption, Container, Figure, Img, Main, Name} from "@components/basi
 
 export const metadata: Metadata = {
 	title: "Спуск судна на воду",
-	description: "Блок корпусных производств: создание секций и блоков судна"
+	description: "Церемония спуска на воду"
 }
 
 export default function Water() {
