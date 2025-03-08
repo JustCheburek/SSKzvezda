@@ -15,10 +15,12 @@ export default {
 				gray: "#232323"
 			},
 			screens: {
-				"xs": "475px"
+				"xs": "475px",
+				"xm": "832px",
 			}
 		},
 	},
+	darkMode: 'selector',
 	plugins: [
 			addDynamicIconSelectors()
 	],

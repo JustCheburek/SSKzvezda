@@ -3,8 +3,9 @@ import {PropsWithChildren} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {H3} from "@components/text";
+import {ThemeButton} from "@components/theme";
 
-function HeaderLink({href, children, className="", ...props}: PropsWithChildren<NavLinkProps>) {
+function HeaderLink({href, children, className = "", ...props}: PropsWithChildren<NavLinkProps>) {
 	return (
 			<NavLink
 					href={href}
@@ -20,8 +21,8 @@ function HeaderLink({href, children, className="", ...props}: PropsWithChildren<
 export function Header() {
 	return (
 			<header className="flex gap-8 justify-between items-center text-center py-6 px-16">
-				<Link href="/" className="flex justify-center items-center gap-4">
-					<div className="relative min-h-12 aspect-video">
+			<Link href="/" className="grid sm:flex justify-center items-center gap-4">
+					<div className="relative h-12 aspect-video">
 						<Image src="/logos/logo.svg" alt="Логотип" fill/>
 					</div>
 					<H3>
@@ -29,12 +30,12 @@ export function Header() {
 					</H3>
 				</Link>
 
-				{/*<div className="size-10 sm:hidden">
-					<span className="icon-[iconamoon--menu-burger-horizontal-duotone] size-full dark:text-neutral-200/90"/>
-				</div>*/}
+				<nav className="hidden xm:flex">
+					<ul className="flex justify-end gap-4 list-none font-medium *:flex *:items-center *:justify-center">
+						<li>
+							<ThemeButton/>
+						</li>
 
-				<nav className="hidden md:flex">
-					<ul className="flex justify-end gap-8 list-none font-medium">
 						<li>
 							<HeaderLink href="/" title="Этапы создания судна">
 								Этапы
@@ -46,7 +47,8 @@ export function Header() {
 							</HeaderLink>
 						</li>*/}
 						<li>
-							<HeaderLink href={new URL(process.env.NEXT_PUBLIC_SSKURL!).toString()} title="Официальный сайт" target="_blank">
+							<HeaderLink href={new URL(process.env.NEXT_PUBLIC_SSKURL!).toString()} title="Официальный сайт"
+							            target="_blank">
 								ССК Звезда
 							</HeaderLink>
 						</li>

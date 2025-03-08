@@ -30,6 +30,9 @@
       ],
       "@components/*": [
         "./ui/components/*"
+      ],
+      "@providers/*": [
+        "./ui/providers/*"
       ]
     }
   },
