@@ -57,8 +57,11 @@ const Heading = ({children}: PropsWithChildren) => (
 		</H1>
 )
 
-const Text = ({children}: PropsWithChildren) => (
-		<H3 className="flex relative gap-2 justify-center items-center text-neutral-200/90">
+const Text = ({children, bg = true}: PropsWithChildren<{ bg?: boolean }>) => (
+		<H3 className={cn(
+				"flex relative gap-2 justify-center items-center",
+				{"text-neutral-200/90": bg}
+		)}>
 			{children}
 		</H3>
 )
@@ -94,7 +97,7 @@ export default function Stages() {
 					<H1>
 						Согласование
 					</H1>
-					<Text>
+					<Text bg={false}>
 						Всё должно быть по ГОСТу
 					</Text>
 				</Section>
