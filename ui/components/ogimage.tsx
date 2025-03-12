@@ -19,7 +19,7 @@ export function OGImageBox() {
           ССК Звезда
         </h1>
         <h1 style={{fontSize: 47, color: "#FFFFFF", fontWeight: 500, textAlign: "center", maxWidth: "80%"}}>
-          Этапы создания судно
+          Этапы создания судна
         </h1>
       </div>
   )
