@@ -21,8 +21,8 @@ function HeaderLink({href, children, className = "", ...props}: PropsWithChildre
 export function Header() {
 	return (
 			<header className="flex gap-8 justify-between items-center text-center py-6 px-16">
-			<Link href="/" className="grid sm:flex justify-center items-center gap-4">
-					<div className="relative h-12 aspect-video">
+				<Link href="/" className="grid xm:flex justify-center items-center gap-4">
+					<div className="relative h-12 aspect-video mx-auto">
 						<Image src="/logos/logo.svg" alt="Логотип" fill/>
 					</div>
 					<H3>
@@ -30,13 +30,13 @@ export function Header() {
 					</H3>
 				</Link>
 
-				<nav className="hidden xm:flex">
-					<ul className="flex justify-end gap-4 list-none font-medium *:flex *:items-center *:justify-center">
-						<li>
+				<nav className="flex">
+					<ul className="flex justify-end gap-4 list-none font-medium *:xm:flex *:items-center *:justify-center">
+						<li className="flex">
 							<ThemeButton/>
 						</li>
 
-						<li>
+						<li className="hidden">
 							<HeaderLink href="/" title="Этапы создания судна">
 								Этапы
 							</HeaderLink>
@@ -46,9 +46,11 @@ export function Header() {
 								Карта
 							</HeaderLink>
 						</li>*/}
-						<li>
-							<HeaderLink href={new URL(process.env.NEXT_PUBLIC_SSKURL!).toString()} title="Официальный сайт"
-							            target="_blank">
+						<li className="hidden">
+							<HeaderLink
+									href={new URL(process.env.NEXT_PUBLIC_SSKURL!).toString()} title="Официальный сайт"
+									target="_blank"
+							>
 								ССК Звезда
 							</HeaderLink>
 						</li>
