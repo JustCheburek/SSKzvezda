@@ -27,7 +27,7 @@ const Section = (
 				{children}
 			</div>
 
-			<div className="w-full flex flex-0 justify-between mb-12 px-[5vw]">
+			<div className="w-full flex flex-0 justify-between mb-[clamp(1rem,2.5vh,4rem)] px-[5vw]">
 				{left
 						? <ArrowLink href={`#${left}`} left/>
 						: <div/>
