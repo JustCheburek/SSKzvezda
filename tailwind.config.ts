@@ -1,5 +1,6 @@
 import type {Config} from "tailwindcss";
-import { addDynamicIconSelectors } from "@iconify/tailwind";
+import {addDynamicIconSelectors} from "@iconify/tailwind";
+import plugin from "tailwindcss/plugin";
 
 export default {
 	content: [
@@ -22,6 +23,26 @@ export default {
 	},
 	darkMode: 'selector',
 	plugins: [
-			addDynamicIconSelectors()
+		addDynamicIconSelectors(),
+		plugin(function ({addUtilities}) {
+			addUtilities({
+				'.min-w-dscreen': generate('minWidth'),
+				'.max-w-dscreen': generate('maxWidth'),
+				'.w-dscreen': generate('width')
+			})
+
+			// @ts-ignore
+			function generate(property) {
+				return {
+					[property]: [
+						'100vw',
+						'100dvw'
+					],
+					'@supports (-webkit-touch-callout: none)': {
+						[property]: ['-webkit-fill-available', '100dvw']
+					}
+				}
+			}
+		})
 	],
 } satisfies Config;

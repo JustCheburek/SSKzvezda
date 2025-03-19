@@ -16,7 +16,7 @@ const Section = (
 		}: ComponentPropsWithoutRef<"a"> & StringDirections) => (
 		<section
 				className={cn(
-						"relative flex flex-col justify-center items-center text-center min-w-[100dvw] max-w-[100dvw] snap-center",
+						"relative flex flex-col justify-center items-center text-center min-w-dscreen max-w-dscreen snap-center",
 						className
 				)}
 				id={id}
