@@ -25,7 +25,8 @@ export const metadata: Metadata = {
 		url: "https://t.me/JustCheburek"
 	},
 	verification: {
-		yandex: "755f3a5ac12d546e"
+		yandex: "755f3a5ac12d546e",
+		google: "pnG7axFNmaDeUUZkP14pfQIY4GhWqQB-3SWW2ErPCF0"
 	},
 	openGraph: {
 		siteName: "ССК Звезда",
