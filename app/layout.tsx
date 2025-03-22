@@ -24,6 +24,9 @@ export const metadata: Metadata = {
 		name: "JustCheburek",
 		url: "https://t.me/JustCheburek"
 	},
+	verification: {
+		yandex: "755f3a5ac12d546e"
+	},
 	openGraph: {
 		siteName: "ССК Звезда",
 		locale: "ru_RU",

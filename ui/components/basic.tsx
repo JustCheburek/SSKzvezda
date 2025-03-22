@@ -63,13 +63,18 @@ export function Box({children, className = "", ...props}: PropsWithChildren<Box>
 	)
 }
 
-type Figure = ComponentPropsWithoutRef<"figure">
+type Figure = {
+	border?: boolean
+	overflow?: boolean
+} & ComponentPropsWithoutRef<"figure">
 
-export function Figure({children, className = "", ...props}: Figure) {
+export function Figure({children, className = "", border = true, overflow=true, ...props}: Figure) {
 	return (
 			<figure
 					className={cn(
-							"relative flex flex-col gap-4 justify-center items-center border border-light-gray rounded-lg p-4 bg-neutral-100 dark:bg-gray overflow-clip min-h-80 size-full *:z-20 group",
+							"relative flex flex-col gap-4 justify-center items-center rounded-lg p-4 min-h-80 size-full *:z-20 group",
+							{"border border-light-gray bg-neutral-100 dark:bg-gray": border},
+							{"overflow-clip": overflow},
 							className
 					)}
 					{...props}
