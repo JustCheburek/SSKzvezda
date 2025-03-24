@@ -35,7 +35,7 @@ export default function Color() {
 					</Box>
 
 					<Figure>
-						<Img src="/color/block.png" alt="Секция"/>
+						<Img src="/color/block.webp" alt="Секция"/>
 					</Figure>
 
 					<Box className="text-center">
@@ -63,7 +63,7 @@ export default function Color() {
 					</Box>
 
 					<Figure className="md:col-span-2">
-						<Img src="/color/master.png" alt="Мастер"/>
+						<Img src="/color/master2.webp" alt="Мастер"/>
 					</Figure>
 				</Container>
 			</Main>

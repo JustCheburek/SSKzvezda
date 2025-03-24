@@ -35,7 +35,7 @@ export default function TSSB() {
 					</Box>
 
 					<Figure className="lg:col-span-2 md:row-span-2 lg:min-h-96">
-						<Img src="/tssb/tssb.jpeg" alt="ЦСБ"/>
+						<Img src="/tssb/tssb.webp" alt="ЦСБ"/>
 					</Figure>
 
 					<Box>

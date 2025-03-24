@@ -120,7 +120,7 @@ export default function Stages() {
 				<Section id="bkp" left="approval" right="color">
 					<LinkBox href="/bkp">
 						<Figure>
-						<BgImg src="/bkp/building.jpg" alt="БКП"/>
+						<BgImg src="/bkp/building.webp" alt="БКП"/>
 							<Heading>
 								БКП
 							</Heading>
@@ -136,7 +136,7 @@ export default function Stages() {
 				<Section id="color" left="bkp" right="tssb">
 					<LinkBox href="/color">
 						<Figure>
-							<BgImg src="/color/master.png" alt="Мастер"/>
+							<BgImg src="/color/master2.webp" alt="Мастер"/>
 							<Heading>
 								Окраска
 							</Heading>
@@ -153,7 +153,7 @@ export default function Stages() {
 				<Section id="tssb" left="color" right="stapel">
 					<LinkBox href="/tssb">
 						<Figure>
-							<BgImg src="/tssb/tssb.jpeg" alt="ЦСБ"/>
+							<BgImg src="/tssb/tssb.webp" alt="ЦСБ"/>
 							<Heading>
 								ЦСБ
 							</Heading>
@@ -169,7 +169,7 @@ export default function Stages() {
 				<Section id="stapel" left="tssb" right="dok">
 					<LinkBox href="/stapel">
 						<Figure>
-							<BgImg src="/stapel/2K5A1325.jpg" alt="Стапель"/>
+							<BgImg src="/stapel/2K5A1325.webp" alt="Стапель"/>
 							<Heading>
 								Стапель
 							</Heading>
@@ -185,7 +185,7 @@ export default function Stages() {
 				<Section id="dok" left="stapel" right="water">
 					<LinkBox href="/dok">
 						<Figure>
-							<BgImg src="/dok/water_in.jpg" alt="Сухой док с водой внутри"/>
+							<BgImg src="/dok/water_in.webp" alt="Сухой док с водой внутри"/>
 							<Heading>
 								Сухой док
 							</Heading>
@@ -201,7 +201,7 @@ export default function Stages() {
 				<Section id="water" left="dok">
 					<LinkBox href="/water">
 						<Figure>
-							<BgImg src="/water/afra.jpg" alt="Афрамакс"/>
+							<BgImg src="/water/afra.webp" alt="Афрамакс"/>
 							<Heading>
 								В добрый путь
 							</Heading>

@@ -21,13 +21,13 @@ export default function Water() {
 
 				<Container>
 					<Figure className="lg:row-span-2 lg:min-h-96">
-						<Img src="/water/naming.jpg" alt="Название судна"/>
+						<Img src="/water/naming.webp" alt="Название судна"/>
 					</Figure>
 					<Box className="text-center">
 						Каждое судно имеет своё уникальное «имянаречение»
 					</Box>
 					<Figure className="lg:row-span-2 lg:min-h-96">
-						<Img src="/water/front.jpg" alt="Перед ледокола"/>
+						<Img src="/water/front.webp" alt="Перед ледокола"/>
 						<Caption dir="rtl">
 							Ледокол
 						</Caption>
@@ -37,37 +37,37 @@ export default function Water() {
 						а менять его считается дурной приметой
 					</Box>
 					<Figure className="lg:min-h-96">
-						<Img src="/water/gas.png" alt="Газовоз"/>
+						<Img src="/water/gas2.webp" alt="Газовоз"/>
 						<Caption dir="rtl">
 							Газовоз
 						</Caption>
 					</Figure>
 					<Figure className="lg:col-span-2 min-h-96">
-						<Img src="/water/from_dok.jpg" alt="Газовоз"/>
+						<Img src="/water/from_dok.webp" alt="Газовоз"/>
 						<Caption dir="ltr">
 							Газовоз
 						</Caption>
 					</Figure>
 					<Figure className="lg:col-span-2 min-h-96">
-						<Img src="/water/led.jpg" alt="Ледокол"/>
+						<Img src="/water/led.webp" alt="Ледокол"/>
 						<Caption dir="rtl">
 							Ледокол
 						</Caption>
 					</Figure>
 					<Figure className="min-h-96">
-						<Img src="/water/afra3.jpg" alt="Афрамакс"/>
+						<Img src="/water/afra3.webp" alt="Афрамакс"/>
 						<Caption dir="ltr">
 							Афрамакс
 						</Caption>
 					</Figure>
 					<Figure className="min-h-96">
-						<Img src="/water/gas.jpg" alt="Газовоз"/>
+						<Img src="/water/gas1.webp" alt="Газовоз"/>
 						<Caption dir="rtl">
 							Газовоз
 						</Caption>
 					</Figure>
 					<Figure className="lg:col-span-2 min-h-96">
-						<Img src="/water/afra.jpg" alt="Афрамакс"/>
+						<Img src="/water/afra.webp" alt="Афрамакс"/>
 						<Caption dir="ltr">
 							Афрамакс
 						</Caption>

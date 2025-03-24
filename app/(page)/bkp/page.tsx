@@ -35,11 +35,11 @@ export default function BKP() {
 					</Box>
 
 					<Figure className="lg:col-span-2 lg:row-span-2 lg:min-h-96">
-						<Img src="/bkp/building.jpg" alt="Цех"/>
+						<Img src="/bkp/building.webp" alt="Цех"/>
 					</Figure>
 
 					<Figure>
-						<Img src="/block.jpg" alt="Секция судна"/>
+						<Img src="/block.webp" alt="Секция судна"/>
 						<Caption dir="rtl">
 							Секция
 						</Caption>
@@ -96,7 +96,7 @@ export default function BKP() {
 					</Box>
 
 					<Figure className="lg:col-span-2">
-						<Img src="/bkp/people_welding.jpg" alt="Сварка под руководством человека"/>
+						<Img src="/bkp/people_welding.webp" alt="Сварка под руководством человека"/>
 					</Figure>
 
 					<Box>
@@ -129,11 +129,11 @@ export default function BKP() {
 					</Box>
 
 					<Figure className="lg:col-span-2">
-						<Img src="/bkp/auto_welding.jpg" alt="Сварка"/>
+						<Img src="/bkp/auto_welding.webp" alt="Сварка"/>
 					</Figure>
 
 					<Figure className="lg:col-span-2">
-						<Img src="/people/group.jpg" alt="Группа работников"/>
+						<Img src="/people/group.webp" alt="Группа работников"/>
 					</Figure>
 
 					<Box>

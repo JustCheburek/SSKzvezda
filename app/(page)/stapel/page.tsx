@@ -38,16 +38,16 @@ export default function Stapel() {
 						</div>
 					</Box>
 					<Figure className="lg:col-span-2 lg:row-span-2">
-						<Img src="/stapel/1.jpg" alt="Стапель"/>
+						<Img src="/stapel/1.webp" alt="Стапель"/>
 					</Figure>
 					<Figure>
-						<Img src="/stapel/2.jpg" alt="Стапель"/>
+						<Img src="/stapel/2.webp" alt="Стапель"/>
 					</Figure>
 					<Figure>
-						<Img src="/stapel/3.jpg" alt="Стапель"/>
+						<Img src="/stapel/3.webp" alt="Стапель"/>
 					</Figure>
 					<Figure>
-						<Img src="/stapel/10.jpg" alt="Стапель"/>
+						<Img src="/stapel/10.webp" alt="Стапель"/>
 					</Figure>
 					<Box>
 						<Heading>

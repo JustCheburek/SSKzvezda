@@ -21,7 +21,7 @@ export default function Dok() {
 
 				<Container>
 					<Figure className="lg:col-span-2 lg:row-span-2">
-						<Img src="/dok/sudno.jpg" alt="Док с кораблём внутри"/>
+						<Img src="/dok/sudno.webp" alt="Док с кораблём внутри"/>
 					</Figure>
 					<Box>
 						<Heading>
@@ -65,7 +65,7 @@ export default function Dok() {
 						</Ul>
 					</Box>
 					<Figure>
-						<Img src="/dok/clear.jpg" alt="Пустой док"/>
+						<Img src="/dok/clear.webp" alt="Пустой док"/>
 					</Figure>
 					<Box>
 						<Heading>
@@ -90,7 +90,7 @@ export default function Dok() {
 						</Ul>
 					</Box>
 					<Figure className="lg:col-span-2 lg:row-span-3">
-						<Img src="/dok/water_in.jpg" alt="Док с водой внутри"/>
+						<Img src="/dok/water_in.webp" alt="Док с водой внутри"/>
 					</Figure>
 					<Box>
 						<Heading>
