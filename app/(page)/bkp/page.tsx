@@ -35,7 +35,7 @@ export default function BKP() {
 					</Box>
 
 					<Figure className="lg:col-span-2 lg:row-span-2 lg:min-h-96 p-0">
-						<video autoPlay loop muted className="grayscale-0 size-full">
+						<video autoPlay loop muted className="size-full">
 							<source src="/bkp/preview.mp4" type="video/mp4"/>
 							<p>
 								Ваш браузер не поддерживает HTML5
