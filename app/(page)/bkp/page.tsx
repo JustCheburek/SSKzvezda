@@ -34,13 +34,8 @@ export default function BKP() {
 						</Ul>
 					</Box>
 
-					<Figure className="lg:col-span-2 lg:row-span-2 lg:min-h-96 p-0">
-						<video autoPlay loop muted className="size-full">
-							<source src="/bkp/preview.mp4" type="video/mp4"/>
-							<p>
-								Ваш браузер не поддерживает HTML5
-							</p>
-						</video>
+					<Figure className="lg:col-span-2 lg:row-span-2 lg:min-h-96">
+						<Img src="/bkp/building.webp" alt="Цех"/>
 					</Figure>
 
 					<Figure>
@@ -100,8 +95,8 @@ export default function BKP() {
 						</Ul>
 					</Box>
 
-					<Figure className="lg:col-span-2 min-h-96">
-						<Img src="/bkp/building.webp" alt="Сварка под руководством человека"/>
+					<Figure className="lg:col-span-2">
+						<Img src="/bkp/people_welding.webp" alt="Сварка под руководством человека"/>
 					</Figure>
 
 					<Box>
@@ -134,7 +129,7 @@ export default function BKP() {
 					</Box>
 
 					<Figure className="lg:col-span-2">
-						<Img src="/bkp/people_welding.webp" alt="Сварка"/>
+						<Img src="/bkp/auto_welding.webp" alt="Сварка"/>
 					</Figure>
 
 					<Figure className="lg:col-span-2">
