@@ -87,11 +87,23 @@ export default function Stages() {
 					<H1>
 						Заказ
 					</H1>
+					<p className="absolute bottom-[clamp(5rem,12vh,10rem)] right-[clamp(5rem,7.5vw,50%)] font-mono text-left text-neutral-600 dark:text-neutral-400">
+						Танкер-Газовоз<br/>
+						СПГ класса ARC 7<br/>
+						300×48.8 метров
+					</p>
 				</Section>
 				<Section id="project" left="order" right="approval">
 					<H1>
 						Проект
 					</H1>
+					<Figure className="absolute bottom-[clamp(5rem,10vh,10rem)] right-[clamp(5rem,7.5vw,50%)] w-32 h-32 min-h-0 text-neutral-600 dark:text-neutral-400 hover:text-unic duration-500"
+					        border={false} overflow={false}>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+									d="M4 10.4V4a1 1 0 0 1 1-1h5V1h4v2h5a1 1 0 0 1 1 1v6.4l1.086.326a1 1 0 0 1 .683 1.2l-1.517 6.068a5 5 0 0 1-1.902-.273l1.25-5.351L12 10l-7.6 2.37l1.25 5.351a5 5 0 0 1-1.902.273l-1.516-6.068a1 1 0 0 1 .682-1.2zm2-.6L12 8l6 1.8V5H6zM4 20a5.98 5.98 0 0 0 4-1.528A5.98 5.98 0 0 0 12 20a5.98 5.98 0 0 0 4-1.528A5.98 5.98 0 0 0 20 20h2v2h-2a7.96 7.96 0 0 1-4-1.07A7.96 7.96 0 0 1 12 22a7.96 7.96 0 0 1-4-1.07A7.96 7.96 0 0 1 4 22H2v-2z"/>
+						</svg>
+					</Figure>
 				</Section>
 				<Section id="approval" left="project" right="bkp">
 					<H1>
@@ -100,11 +112,15 @@ export default function Stages() {
 					<Text bg={false}>
 						Всё должно быть по ГОСТу
 					</Text>
+					<Figure className="absolute bottom-[clamp(5rem,10vh,10rem)] right-[clamp(5rem,7.5vw,50%)] w-36 h-36 min-h-0"
+					        border={false} overflow={false}>
+						<Img src="/handshake.svg" alt="Чертёж" className="text-white"/>
+					</Figure>
 				</Section>
 				<Section id="bkp" left="approval" right="color">
 					<LinkBox href="/bkp">
 						<Figure>
-							<BgImg src="/bkp/building.jpg" alt="БКП"/>
+						<BgImg src="/bkp/building.jpg" alt="БКП"/>
 							<Heading>
 								БКП
 							</Heading>

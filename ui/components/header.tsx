@@ -21,11 +21,11 @@ function HeaderLink({href, children, className = "", ...props}: PropsWithChildre
 export function Header() {
 	return (
 			<header className="flex gap-8 justify-between items-center text-center py-[clamp(0.5rem,2.5vh,1.5rem)] px-16">
-				<Link href="/" className="grid xm:flex justify-center items-center gap-4">
+				<Link href="/" className="grid xm:flex justify-center items-center gap-4 group">
 					<div className="relative h-12 aspect-video mx-auto">
 						<Image src="/logos/logo.svg" alt="Логотип" fill/>
 					</div>
-					<H3>
+					<H3 className="group-hover:text-unic duration-500">
 						Виртуальная экскурсия
 					</H3>
 				</Link>
