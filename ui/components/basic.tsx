@@ -72,7 +72,7 @@ export function Figure({children, className = "", border = true, overflow=true, 
 	return (
 			<figure
 					className={cn(
-							"relative flex flex-col gap-4 justify-center items-center rounded-lg p-4 min-h-80 size-full *:z-20 group",
+							"relative flex flex-col gap-4 justify-center items-center rounded-lg min-h-80 size-full *:z-20 group",
 							{"border border-light-gray bg-neutral-100 dark:bg-gray": border},
 							{"overflow-clip": overflow},
 							className

@@ -13,7 +13,7 @@
 	}
 }
 
-img {
+img, video, source {
 	object-fit: cover;
 }
 
